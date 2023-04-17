@@ -1,0 +1,21 @@
+#Task
+- name
+- description - 
+- completed - boolean
+- user_id
+
+
+
+
+
+#User
+- name
+- email
+- password_confirmation
+
+
+
+#Category
+- title
+- task_id
+
