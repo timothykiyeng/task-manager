@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
-    class SessionsController < ApplicationController
-        skip_before_action :authorize, only: :create
+        skip_before_action :authorize, only: [:create, :destroy]
       
         def create
           user = User.find_by(name: params[:name])
@@ -18,5 +17,4 @@ class SessionsController < ApplicationController
           head :no_content
       end
       
-      end
 end
